@@ -4,11 +4,12 @@ This plan outlines the steps to build the core Todo CRUD API using Rust, Axum, a
 
 ## Phase 1: Project Initialization & Database Setup
 
-- [ ] Task: Initialize Rust Project
-    - [ ] Create new Cargo project with `cargo new todo-api`
-    - [ ] Add dependencies: `axum`, `tokio`, `serde`, `serde_json`, `sqlx`, `dotenvy`, `tracing`, `tracing-subscriber`
-    - [ ] Create basic `main.rs` that starts an Axum server
-    - [ ] Verification: Run `cargo run` and ensure server starts
+- [ ] Task: Initialize Rust Project (1109197)
+    - [x] Create new Cargo project with `cargo new todo-api`
+    - [x] Add dependencies: `axum`, `tokio`, `serde`, `serde_json`, `sqlx`, `dotenvy`, `tracing`, `tracing-subscriber`
+    - [x] Create basic `main.rs` that starts an Axum server
+    - [x] Verification: Run `cargo run` and ensure server starts
+    - [ ] Ask user to prepare pull request
 
 - [ ] Task: Configure Database & Migrations
     - [ ] Set up `docker-compose.yml` for PostgreSQL
@@ -18,6 +19,7 @@ This plan outlines the steps to build the core Todo CRUD API using Rust, Axum, a
     - [ ] Write SQL for `todos` table in migration file
     - [ ] Run migration: `sqlx migrate run`
     - [ ] Verification: Connect to DB and verify table exists
+    - [ ] Ask user to prepare pull request
 
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Initialization & Database Setup' (Protocol in workflow.md)
 
@@ -30,6 +32,7 @@ This plan outlines the steps to build the core Todo CRUD API using Rust, Axum, a
     - [ ] Register route `POST /todos`
     - [ ] Pass tests (Green Phase)
     - [ ] Refactor
+    - [ ] Ask user to prepare pull request
 
 - [ ] Task: Implement 'List Todos' (GET /todos)
     - [ ] Write failing test: Create a test that GETs /todos and expects a list
@@ -37,6 +40,7 @@ This plan outlines the steps to build the core Todo CRUD API using Rust, Axum, a
     - [ ] Register route `GET /todos`
     - [ ] Pass tests (Green Phase)
     - [ ] Refactor
+    - [ ] Ask user to prepare pull request
 
 - [ ] Task: Implement 'Get Todo' (GET /todos/:id)
     - [ ] Write failing test: Create a test that GETs a specific ID and expects the correct todo
@@ -44,6 +48,7 @@ This plan outlines the steps to build the core Todo CRUD API using Rust, Axum, a
     - [ ] Register route `GET /todos/:id`
     - [ ] Pass tests (Green Phase)
     - [ ] Refactor
+    - [ ] Ask user to prepare pull request
 
 - [ ] Task: Implement 'Update Todo' (PUT /todos/:id)
     - [ ] Write failing test: Create a test that updates a todo and verifies the change
@@ -52,6 +57,7 @@ This plan outlines the steps to build the core Todo CRUD API using Rust, Axum, a
     - [ ] Register route `PUT /todos/:id`
     - [ ] Pass tests (Green Phase)
     - [ ] Refactor
+    - [ ] Ask user to prepare pull request
 
 - [ ] Task: Implement 'Delete Todo' (DELETE /todos/:id)
     - [ ] Write failing test: Create a test that deletes a todo and verifies it's gone
@@ -59,6 +65,7 @@ This plan outlines the steps to build the core Todo CRUD API using Rust, Axum, a
     - [ ] Register route `DELETE /todos/:id`
     - [ ] Pass tests (Green Phase)
     - [ ] Refactor
+    - [ ] Ask user to prepare pull request
 
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Core CRUD Implementation' (Protocol in workflow.md)
 
@@ -69,9 +76,11 @@ This plan outlines the steps to build the core Todo CRUD API using Rust, Axum, a
     - [ ] Verify error handling for invalid inputs
     - [ ] Verify error handling for non-existent IDs
     - [ ] Check code coverage
+    - [ ] Ask user to prepare pull request
 
 - [ ] Task: Documentation Update
     - [ ] Add comments to public functions
     - [ ] Update README.md with run instructions
+    - [ ] Ask user to prepare pull request
 
 - [ ] Task: Conductor - User Manual Verification 'Phase 3: Final Verification & Polish' (Protocol in workflow.md)
