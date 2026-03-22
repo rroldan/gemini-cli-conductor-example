@@ -1,6 +1,0 @@
-/home/rroldan/gemini-cli-conductor-example/todo-api/target/debug/deps/lazy_static-d5bbe7e57a3aa80e.d: /home/rroldan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lazy_static-1.5.0/src/lib.rs /home/rroldan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lazy_static-1.5.0/src/inline_lazy.rs
-
-/home/rroldan/gemini-cli-conductor-example/todo-api/target/debug/deps/liblazy_static-d5bbe7e57a3aa80e.rmeta: /home/rroldan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lazy_static-1.5.0/src/lib.rs /home/rroldan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lazy_static-1.5.0/src/inline_lazy.rs
-
-/home/rroldan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lazy_static-1.5.0/src/lib.rs:
-/home/rroldan/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/lazy_static-1.5.0/src/inline_lazy.rs:
