@@ -4,5 +4,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: Build Core Todo CRUD API**
+- [~] **Track: Build Core Todo CRUD API**
   *Link: [./tracks/build_core_todo_crud_api_20260321/](./tracks/build_core_todo_crud_api_20260321/)*

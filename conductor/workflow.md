@@ -13,6 +13,14 @@
 
 All tasks follow a strict lifecycle:
 
+### Branching Protocol
+
+Before beginning a new Phase or a significant Task, a dedicated branch MUST be created.
+
+1. **Phase Branching:** At the start of a new Phase, create a branch named `phase/<phase_name_slug>`.
+2. **Task Branching:** For each task within a phase, create a feature branch from the phase branch named `task/<task_name_slug>`.
+3. **Merging:** Once a task is complete and verified, merge the task branch back into the phase branch. When all tasks in a phase are complete, merge the phase branch into the main development branch.
+
 ### Standard Task Workflow
 
 1. **Select Task:** Choose the next available task from `plan.md` in sequential order
@@ -57,9 +65,13 @@ All tasks follow a strict lifecycle:
     - **Step 10.1: Update Plan:** Read `plan.md`, find the line for the completed task, update its status from `[~]` to `[x]`, and append the first 7 characters of the *just-completed commit's* commit hash.
     - **Step 10.2: Write Plan:** Write the updated content back to `plan.md`.
 
-11. **Commit Plan Update:**
+11. Commit Plan Update:
     - **Action:** Stage the modified `plan.md` file.
     - **Action:** Commit this change with a descriptive message (e.g., `conductor(plan): Mark task 'Create user model' as complete`).
+
+12. **Ask User to Prepare Pull Request:**
+    - **Action:** After completing all previous steps, inform the user that the task is ready for review and ask them to prepare the pull request.
+
 
 ### Phase Completion Verification and Checkpointing Protocol
 
