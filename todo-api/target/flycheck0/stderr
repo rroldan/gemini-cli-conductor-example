@@ -1,49 +1,12 @@
-   0.297241699s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint: stale: changed "/home/rroldan/gemini-cli-conductor-example/todo-api/Cargo.toml"
-   0.297301699s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint:           (vs) "/home/rroldan/gemini-cli-conductor-example/todo-api/target/debug/.fingerprint/todo-api-38a1f3a0f48c72d4/dep-bin-todo-api"
-   0.297312999s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1774122706, nanos: 575932562 } < FileTime { seconds: 1774122855, nanos: 871932510 }
-   0.297823299s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint: fingerprint dirty for todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api)/Check { test: false }/TargetInner { name: "todo-api", doc: true, ..: with_path("/home/rroldan/gemini-cli-conductor-example/todo-api/src/main.rs", Edition2024) }
-   0.297848399s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/rroldan/gemini-cli-conductor-example/todo-api/target/debug/.fingerprint/todo-api-38a1f3a0f48c72d4/dep-bin-todo-api", reference_mtime: FileTime { seconds: 1774122706, nanos: 575932562 }, stale: "/home/rroldan/gemini-cli-conductor-example/todo-api/Cargo.toml", stale_mtime: FileTime { seconds: 1774122855, nanos: 871932510 } }))
-   0.314386399s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint: fingerprint error for todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api)/Check { test: true }/TargetInner { name: "todo-api", doc: true, ..: with_path("/home/rroldan/gemini-cli-conductor-example/todo-api/src/main.rs", Edition2024) }
-   0.314449099s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/rroldan/gemini-cli-conductor-example/todo-api/target/debug/.fingerprint/todo-api-74eef870a3cb1278/test-bin-todo-api`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: cargo_util::paths::read_bytes
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   3: cargo::core::compiler::fingerprint::prepare_target
-   4: cargo::core::compiler::compile
-   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   6: cargo::ops::cargo_compile::compile_ws
-   7: cargo::ops::cargo_compile::compile_with_exec
-   8: cargo::ops::cargo_compile::compile
-   9: cargo::commands::check::exec
-  10: <cargo::cli::Exec>::exec
-  11: cargo::main
-  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  13: std::rt::lang_start::<()>::{closure#0}
-  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
-             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
-  15: std::panicking::catch_unwind::do_call
-             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
-  16: std::panicking::catch_unwind
-             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
-  17: std::panic::catch_unwind
-             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
-  18: std::rt::lang_start_internal::{{closure}}
-             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
-  19: std::panicking::catch_unwind::do_call
-             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
-  20: std::panicking::catch_unwind
-             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
-  21: std::panic::catch_unwind
-             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
-  22: std::rt::lang_start_internal
-             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
-  23: main
-  24: __libc_start_main
-  25: <unknown>
+   0.260363549s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint: stale: changed "/home/rroldan/gemini-cli-conductor-example/todo-api/src/main.rs"
+   0.260412649s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint:           (vs) "/home/rroldan/gemini-cli-conductor-example/todo-api/target/debug/.fingerprint/todo-api-38a1f3a0f48c72d4/dep-bin-todo-api"
+   0.260419949s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1774122857, nanos: 919932507 } < FileTime { seconds: 1774122932, nanos: 935932471 }
+   0.260686049s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint: fingerprint dirty for todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api)/Check { test: false }/TargetInner { name: "todo-api", doc: true, ..: with_path("/home/rroldan/gemini-cli-conductor-example/todo-api/src/main.rs", Edition2024) }
+   0.260723949s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/rroldan/gemini-cli-conductor-example/todo-api/target/debug/.fingerprint/todo-api-38a1f3a0f48c72d4/dep-bin-todo-api", reference_mtime: FileTime { seconds: 1774122857, nanos: 919932507 }, stale: "/home/rroldan/gemini-cli-conductor-example/todo-api/src/main.rs", stale_mtime: FileTime { seconds: 1774122932, nanos: 935932471 } }))
+   0.280943426s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint: stale: changed "/home/rroldan/gemini-cli-conductor-example/todo-api/src/main.rs"
+   0.280976026s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint:           (vs) "/home/rroldan/gemini-cli-conductor-example/todo-api/target/debug/.fingerprint/todo-api-74eef870a3cb1278/dep-test-bin-todo-api"
+   0.280982626s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1774122857, nanos: 919932507 } < FileTime { seconds: 1774122932, nanos: 935932471 }
+   0.281421626s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint: fingerprint dirty for todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api)/Check { test: true }/TargetInner { name: "todo-api", doc: true, ..: with_path("/home/rroldan/gemini-cli-conductor-example/todo-api/src/main.rs", Edition2024) }
+   0.281455426s  INFO prepare_target{force=false package_id=todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api) target="todo-api"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/rroldan/gemini-cli-conductor-example/todo-api/target/debug/.fingerprint/todo-api-74eef870a3cb1278/dep-test-bin-todo-api", reference_mtime: FileTime { seconds: 1774122857, nanos: 919932507 }, stale: "/home/rroldan/gemini-cli-conductor-example/todo-api/src/main.rs", stale_mtime: FileTime { seconds: 1774122932, nanos: 935932471 } }))
     Checking todo-api v0.1.0 (/home/rroldan/gemini-cli-conductor-example/todo-api)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.57s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.15s
