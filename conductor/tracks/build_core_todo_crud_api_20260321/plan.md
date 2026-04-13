@@ -4,21 +4,22 @@ This plan outlines the steps to build the core Todo CRUD API using Rust, Axum, a
 
 ## Phase 1: Project Initialization & Database Setup
 
-- [ ] Task: Initialize Rust Project (1109197)
+- [x] Task: Initialize Rust Project (1109197) [a021cfd]
     - [x] Create new Cargo project with `cargo new todo-api`
     - [x] Add dependencies: `axum`, `tokio`, `serde`, `serde_json`, `sqlx`, `dotenvy`, `tracing`, `tracing-subscriber`
     - [x] Create basic `main.rs` that starts an Axum server
     - [x] Verification: Run `cargo run` and ensure server starts
-    - [ ] Ask user to prepare pull request
+    - [x] Ask user to prepare pull request
 
-- [ ] Task: Configure Database & Migrations
-    - [ ] Set up `docker-compose.yml` for PostgreSQL
-    - [ ] Create `.env` file with `DATABASE_URL`
-    - [ ] Initialize SQLx: `sqlx database create`
-    - [ ] Create migration: `sqlx migrate add create_todos_table`
-    - [ ] Write SQL for `todos` table in migration file
-    - [ ] Run migration: `sqlx migrate run`
-    - [ ] Verification: Connect to DB and verify table exists
+- [~] Task: Configure Database & Migrations
+    - [x] Set up `docker-compose.yml` for PostgreSQL
+    - [x] Create `.env` file with `DATABASE_URL`
+    - [x] **Launch `docker-compose`**
+    - [x] Initialize SQLx: `sqlx database create`
+    - [x] Create migration: `sqlx migrate add create_todos_table`
+    - [x] Write SQL for `todos` table in migration file
+    - [x] Run migration: `sqlx migrate run`
+    - [x] Verification: Connect to DB and verify table exists
     - [ ] Ask user to prepare pull request
 
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Initialization & Database Setup' (Protocol in workflow.md)
