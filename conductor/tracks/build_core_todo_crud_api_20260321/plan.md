@@ -11,7 +11,7 @@ This plan outlines the steps to build the core Todo CRUD API using Rust, Axum, a
     - [x] Verification: Run `cargo run` and ensure server starts
     - [x] Ask user to prepare pull request
 
-- [~] Task: Configure Database & Migrations
+- [x] Task: Configure Database & Migrations [f3e808a]
     - [x] Set up `docker-compose.yml` for PostgreSQL
     - [x] Create `.env` file with `DATABASE_URL`
     - [x] **Launch `docker-compose`**
@@ -20,7 +20,7 @@ This plan outlines the steps to build the core Todo CRUD API using Rust, Axum, a
     - [x] Write SQL for `todos` table in migration file
     - [x] Run migration: `sqlx migrate run`
     - [x] Verification: Connect to DB and verify table exists
-    - [ ] Ask user to prepare pull request
+    - [x] Ask user to prepare pull request
 
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Initialization & Database Setup' (Protocol in workflow.md)
 
