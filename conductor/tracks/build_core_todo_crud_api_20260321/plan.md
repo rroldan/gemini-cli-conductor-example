@@ -22,18 +22,19 @@ This plan outlines the steps to build the core Todo CRUD API using Rust, Axum, a
     - [x] Verification: Connect to DB and verify table exists
     - [x] Ask user to prepare pull request
 
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Project Initialization & Database Setup' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 1: Project Initialization & Database Setup' (Protocol in workflow.md)
 
 ## Phase 2: Core CRUD Implementation
 
-- [ ] Task: Implement 'Create Todo' (POST /todos)
-    - [ ] Write failing test: Create a test that POSTs a valid todo and expects 201 Created
-    - [ ] Implement `Todo` struct and `CreateTodo` payload struct
-    - [ ] Implement `create_todo` handler
-    - [ ] Register route `POST /todos`
-    - [ ] Pass tests (Green Phase)
-    - [ ] Refactor
-    - [ ] Ask user to prepare pull request
+- [x] Task: Implement 'Create Todo' (POST /todos) [dd60082]
+    - [x] Write failing test: Create a test that POSTs a valid todo and expects 201 Created
+    - [x] Implement `Todo` struct and `CreateTodo` payload struct
+    - [x] Implement `create_todo` handler
+    - [x] Register route `POST /todos`
+    - [x] Pass tests (Green Phase)
+    - [x] Refactor
+    - [x] Ask user to prepare pull request
+
 
 - [ ] Task: Implement 'List Todos' (GET /todos)
     - [ ] Write failing test: Create a test that GETs /todos and expects a list
